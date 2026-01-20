@@ -745,6 +745,31 @@ Rota entre ellas para:
         block: 'Rotación Sin Hinchazón'
       },
       {
+        id: 'pan-de-claras',
+        title: 'Pan de Claras de Huevo',
+        description: 'Proteína pura y liviana',
+        idealFor: 'Desayuno proteico',
+        ingredients: [
+          '½ taza de claras de huevo',
+          '1 cucharada de almendras molidas',
+          '¾ taza de harina de avena o de almendras',
+          '1 cucharadita de bicarbonato',
+          'Un chorrito de jugo de limón',
+          'Sal y especias a gusto'
+        ],
+        preparation: [
+          'Procesa todos los ingredientes hasta integrar.',
+          'Cocina en sartén tapada a fuego bajo durante 15 minutos.'
+        ],
+        bodyFeel: 'Satisfecha. Sin inflamación prolongada.',
+        tips: [
+          'Usa claras de huevo frescas o pasteurizadas.',
+          'Perfecto para dietas altas en proteína.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
         id: 'pan-nube-gourmet',
         title: 'Pan Nube Gourmet',
         description: 'La versión elevada',
@@ -796,7 +821,7 @@ Simplemente estabas comiendo algo que no era realmente pan.
 
 ✓ Qué pan elegir según el momento del día
 
-✓ 19 recetas que puedes hacer en minutos
+✓ 20 recetas que puedes hacer en minutos
 
 ✓ Cómo escuchar a tu cuerpo y ajustar según lo que funcione
 
