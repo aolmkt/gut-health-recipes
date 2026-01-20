@@ -2,6 +2,7 @@ export interface Recipe {
   id: string;
   title: string;
   description?: string;
+  idealFor?: string;
   ingredients: string[];
   preparation: string[];
   bodyFeel?: string;
@@ -13,7 +14,6 @@ export interface Recipe {
 export interface Section {
   id: string;
   title: string;
-  type: 'intro' | 'block' | 'part' | 'closing';
   content?: string;
   recipes?: Recipe[];
 }
@@ -21,276 +21,446 @@ export interface Section {
 export const ebookSections: Section[] = [
   {
     id: 'introduccion',
-    title: 'Introducción',
-    type: 'intro',
-    content: `Bienvenido a **Pan Sin Hinchazón**, tu manual completo para disfrutar del pan sin inflamación.
+    title: 'Antes de Empezar',
+    content: `# Esto no es tu culpa
 
-Este libro nace de una pregunta que muchos nos hacemos: ¿Por qué el pan me inflama? La respuesta no es simple, pero la solución sí puede serlo.
+No tienes un estómago delicado.
+No exageras.
+No estás imaginando cosas.
 
-Durante años, el pan ha sido demonizado. Sin embargo, el problema no es el pan en sí mismo, sino cómo lo preparamos, qué ingredientes usamos y cómo lo combinamos con otros alimentos.
+Tienes un cuerpo inteligente reaccionando a algo que no debería estar ahí.
 
-En este manual aprenderás:
-- Los fundamentos de la digestión y por qué ciertos panes inflaman
-- Técnicas de fermentación que transforman el gluten
-- Harinas alternativas y sus beneficios
-- Recetas probadas que nutren sin inflamar
-- Un sistema de rotación para mantener tu cuerpo en equilibrio
+¿Y si te dijera que el problema no eres tú, sino lo que te han hecho creer que era pan?
 
-**Tu viaje hacia un pan que nutre comienza aquí.**`
+Lo que encuentras en el supermercado hoy no es pan. Es un producto diseñado para durar, no para nutrirte. Lleno de conservantes, azúcares ocultos, harinas ultraprocesadas y aditivos que tu cuerpo no reconoce.
+
+Y cada vez que lo comes, tu cuerpo responde con hinchazón, gases, cansancio o pesadez. No porque seas débil. Sino porque está haciendo exactamente lo que debe hacer: protegerte.
+
+Este libro no te va a obligar a dejar el pan.
+
+Te va a enseñar a elegirlo, prepararlo y comerlo de una forma que te haga sentir bien. Ligera. Libre. Satisfecha.
+
+Vas a entender qué está pasando en tu cuerpo, cómo identificar los panes que te inflaman, y cómo preparar alternativas reales, fáciles y deliciosas que puedes disfrutar sin culpa.
+
+Porque el pan no es el enemigo.
+El enemigo es el pan que te vendieron como real.
+
+Y a partir de hoy, eso cambia.`
   },
   {
     id: 'bloque-1',
-    title: 'Bloque 1: Fundamentos',
-    type: 'block',
-    content: `## Entendiendo la Inflamación
+    title: 'Bloque 1: La Corrección',
+    content: `# Por qué te hinchas (y no es lo que crees)
 
-La inflamación digestiva ocurre cuando nuestro sistema no puede procesar correctamente ciertos componentes de los alimentos. En el caso del pan convencional, varios factores contribuyen:
+El problema no eres tú.
+El problema no es el pan.
+El problema es cómo se hace el pan hoy.
 
-### El problema del gluten moderno
-El trigo actual ha sido modificado para contener más gluten, haciéndolo más difícil de digerir. La fermentación rápida industrial no permite que las enzimas descompongan estas proteínas.
+Durante miles de años, el pan se hizo de forma simple: harina, agua, sal y tiempo. Las culturas antiguas dejaban fermentar la masa durante horas, a veces días. Ese proceso no solo hacía que el pan supiera mejor, sino que también lo hacía digerible.
 
-### Fermentación: La clave olvidada
-La fermentación lenta (12-24 horas) permite que las bacterias y levaduras predigieran el gluten, reduciendo significativamente su potencial inflamatorio.
+Hoy, la mayoría de los panes comerciales se hacen en menos de dos horas. Y para que eso funcione, se les agrega:
 
-### Señales de que el pan te inflama:
-- Hinchazón abdominal después de comer
-- Gases o malestar digestivo
-- Fatiga post-comida
-- Retención de líquidos
+- Levaduras químicas de acción rápida
+- Gluten extra para dar estructura
+- Azúcares ocultos para acelerar el proceso
+- Conservantes para que dure más en el estante
 
-### La solución está en el proceso
-No necesitas eliminar el pan de tu vida. Necesitas pan elaborado correctamente, con ingredientes de calidad y tiempo de fermentación adecuado.`
+Tu cuerpo no fue diseñado para procesar eso.
+
+Y cuando lo intentas, responde con lo único que puede hacer:
+Inflamación. Gases. Hinchazón. Pesadez.
+
+No eres intolerante. No estás rota.
+Solo estás comiendo algo que no es realmente pan.
+
+## La Regla Simple
+
+Si un pan puede durar semanas sin ponerse malo, tu cuerpo tampoco puede procesarlo. Lo que no se descompone afuera, se descompone adentro. Y eso genera fermentación donde no debería haberla.
+
+El pan real dura 2-3 días. No más.
+
+## El Gluten No Es El Único Problema
+
+Mucha gente cree que si evita el gluten, el problema desaparece. Pero incluso los panes "sin gluten" comerciales están llenos de almidones refinados, gomas y aditivos que pueden generar los mismos síntomas.
+
+El problema no es solo el gluten.
+Es todo lo que viene con él.
+
+## Lo Que Vas a Aprender
+
+En los siguientes bloques vas a descubrir:
+
+1. Cómo identificar qué panes te inflaman (y cuáles no)
+2. Cómo elegir el pan correcto según el momento del día
+3. Recetas simples que puedes hacer en minutos, sin complicaciones
+
+No necesitas ser chef. No necesitas ingredientes raros.
+Solo necesitas entender cómo funciona tu cuerpo.
+
+Y eso empieza ahora.`
   },
   {
     id: 'bloque-2',
-    title: 'Bloque 2: Harinas y Fermentos',
-    type: 'block',
-    content: `## Harinas que Nutren
+    title: 'Bloque 2: El Criterio',
+    content: `# El Semáforo del Pan
 
-No todas las harinas son iguales. Aquí exploramos las mejores opciones para un pan digestivo.
+No todos los panes son iguales. Y tu cuerpo lo sabe.
 
-### Harinas recomendadas:
+Aquí tienes una guía simple para saber qué comer y qué evitar:
 
-**Espelta integral**
-Ancestro del trigo moderno, contiene gluten pero es más digerible. Rica en proteínas y minerales.
+---
 
-**Centeno**
-Fermentación natural excepcional. Su gluten es diferente al del trigo, creando panes más densos pero muy nutritivos.
+## 🔴 PAN ROJO — EVÍTALO
 
-**Trigo sarraceno**
-Sin gluten, sabor terroso. Perfecto para mezclas o panes específicos.
+Estos panes te inflaman casi siempre:
 
-**Avena certificada sin gluten**
-Suave y nutritiva. Excelente para panes suaves y húmedos.
+- **Pan blanco comercial** — Hecho en menos de 2 horas, lleno de aditivos
+- **Pan de molde** — Diseñado para durar, no para nutrirte
+- **Pan "integral" de supermercado** — La mayoría solo tiene color marrón, no fibra real
+- **Bollería industrial** — Azúcar, grasas trans y harinas refinadas
+- **Pan congelado de hornear en casa** — Parece fresco, pero tiene los mismos problemas
 
-### El arte del fermento madre
+**Señales de alerta:**
+- Dura más de 5 días sin enmohecerse
+- Tiene más de 5 ingredientes
+- Contiene "jarabe de glucosa", "emulsificantes" o "mejorantes"
 
-La masa madre es tu mejor aliada. Un fermento activo de 7-14 días transforma completamente las propiedades del pan:
+---
 
-- Reduce el índice glucémico
-- Predigiere las proteínas
-- Aumenta la biodisponibilidad de minerales
-- Mejora la conservación natural
+## 🟡 PAN AMARILLO — CUIDADO
 
-### Mantenimiento del fermento
-Alimenta tu masa madre cada 24 horas a temperatura ambiente, o cada semana si la guardas refrigerada. Usa proporciones 1:1:1 (fermento:harina:agua).`
+Estos panes pueden funcionar para algunas personas, pero no para todas:
+
+- **Pan de panadería artesanal** — Mejor que el industrial, pero revisa los ingredientes
+- **Pan de centeno comercial** — A menudo mezclado con harina de trigo
+- **Pan sin gluten de supermercado** — Revisa que no tenga almidones refinados
+- **Tortillas de trigo** — Pueden contener grasas hidrogenadas
+
+**Cómo probarlos:**
+- Come una porción pequeña y observa tu cuerpo durante 2-3 horas
+- Si sientes hinchazón, pesadez o gases, ese pan no es para ti
+
+---
+
+## 🟢 PAN VERDE — PAN REAL
+
+Estos panes raramente causan problemas:
+
+- **Pan de masa madre real** — Fermentado mínimo 12 horas
+- **Pan casero con ingredientes simples** — Harina, agua, sal, tiempo
+- **Los panes de este libro** — Diseñados para no inflamarte
+
+**Características:**
+- Ingredientes que puedes pronunciar
+- Se pone duro en 2-3 días (señal de que es real)
+- Te deja satisfecha, no hinchada
+
+---
+
+## La Regla de Oro
+
+> Si después de comer pan te sientes pesada, hinchada o con sueño, ese pan no es para ti.
+
+No importa lo que diga la etiqueta.
+No importa si es "orgánico" o "artesanal".
+Tu cuerpo es el único juez que importa.`
   },
   {
     id: 'bloque-3',
-    title: 'Bloque 3: Técnicas Esenciales',
-    type: 'block',
-    content: `## Técnicas para Pan Digestivo
+    title: 'Bloque 3: El Uso Real',
+    content: `# El pan correcto para cada momento
 
-### Autólisis
-Mezcla harina y agua, deja reposar 30-60 minutos antes de añadir sal y fermento. Esto hidrata la harina y comienza el desarrollo del gluten de forma suave.
+Tu cuerpo cambia durante el día. Y el pan también debe adaptarse.
 
-### Fermentación en frío
-Después del primer levado, refrigera la masa 12-48 horas. El frío ralentiza la fermentación, desarrollando sabores complejos y mejorando la digestibilidad.
+No es lo mismo lo que necesitas al despertar que lo que te sienta bien antes de dormir. Aquí tienes una guía para elegir el pan correcto según el momento:
 
-### Plegados suaves
-En lugar de amasar vigorosamente, realiza plegados suaves cada 30 minutos durante las primeras 2 horas. Esto desarrolla estructura sin estresar la masa.
+---
 
-### Horneado con vapor
-Los primeros 15 minutos de horneado deben ser con vapor (una bandeja con agua caliente en el horno). Esto crea una corteza crujiente y permite la expansión adecuada.
+## 🌅 MAÑANA — Ligero y Energético
 
-### Reposo post-horneado
-Nunca cortes el pan recién salido del horno. Espera al menos 1 hora para que complete su cocción interna y los almidones se estabilicen.
+Por la mañana, tu sistema digestivo está despertando. Necesita algo suave que no lo sobrecargue.
 
-### Regla de oro
-Cuanto más larga la fermentación, mejor la digestión. Planifica tus panes con tiempo y tu cuerpo te lo agradecerá.`
+**Mejores opciones:**
+- Pan Nube — Ultra ligero, fácil de digerir
+- Pan de Linaza — Fibra suave que activa sin inflamar
+- Pan de Espinaca — Nutrición sin pesadez
+
+**Evita:** Panes densos o con muchas grasas. Tu cuerpo aún no está listo para procesarlos.
+
+---
+
+## ☀️ MEDIODÍA — Estructura y Saciedad
+
+A mitad del día necesitas algo que te sostenga sin dejarte pesada para la tarde.
+
+**Mejores opciones:**
+- Pan de Almendras — Perfecto para sándwiches
+- Pan de Garbanzos — Saciante y nutritivo
+- Pan de Calabaza — Suave pero sustancioso
+
+**Consejo:** Este es el mejor momento para panes con más proteína o fibra.
+
+---
+
+## 🌙 NOCHE — Suave y Reconfortante
+
+Por la noche, tu digestión se ralentiza. Necesitas algo que no interfiera con tu descanso.
+
+**Mejores opciones:**
+- Pan de Plátano — Confort sin inflamación
+- Pan de Queso — Satisface antojos sin consecuencias
+- Pan Nube — Siempre seguro
+
+**Evita:** Panes con mucha fibra o ingredientes difíciles de digerir. Pueden causar gases durante la noche.
+
+---
+
+## 🏃‍♀️ ANTES DE EJERCICIO
+
+Si vas a moverte, necesitas energía rápida pero limpia.
+
+**Mejores opciones:**
+- Pan de Plátano — Energía natural
+- Pan Nube — Ligero, no te pesará
+
+---
+
+## 📚 PARA LLEVAR AL TRABAJO
+
+Necesitas algo que aguante bien y sea fácil de transportar.
+
+**Mejores opciones:**
+- Pan de Almendras — Mantiene su estructura
+- Pan de Garbanzos — No se deshace fácilmente
+
+---
+
+## La Regla del Momento
+
+> No hay un pan perfecto para todo el día. Hay un pan perfecto para cada momento.
+
+Escucha a tu cuerpo. Observa cómo te sientes después de cada comida. Y ajusta según lo que funcione para ti.`
   },
   {
     id: 'parte-1-recetas',
     title: 'Parte 1: Recetas Esenciales',
-    type: 'part',
+    content: `# Las 8 Recetas Base
+
+Estas son las recetas fundamentales que necesitas dominar. Son simples, rápidas y funcionan para casi cualquier persona.
+
+Cada una está diseñada para:
+- Prepararse en menos de 15 minutos
+- Usar ingredientes fáciles de encontrar
+- No causar hinchazón ni malestar
+
+Empieza por la que más te llame la atención. No hay orden correcto.`,
     recipes: [
       {
-        id: 'pan-espelta-basico',
-        title: 'Pan de Espelta Básico',
-        description: 'El pan fundamental para comenzar tu viaje. Fermentación larga, sabor suave y excelente digestibilidad.',
+        id: 'pan-nube',
+        title: 'Pan Nube',
+        description: 'Ligero, suave y fácil de digerir',
+        idealFor: 'Desayuno ligero',
         ingredients: [
-          '500g de harina de espelta integral',
-          '350ml de agua filtrada tibia',
-          '100g de masa madre activa',
-          '10g de sal marina',
-          '1 cucharada de aceite de oliva (opcional)'
+          '1 huevo',
+          '1 cucharada de yogur griego o requesón',
+          '½ cucharadita de polvo para hornear',
+          '1 pizca de sal'
         ],
         preparation: [
-          'Mezcla la harina con el agua y deja reposar 30 minutos (autólisis).',
-          'Añade la masa madre y mezcla bien con las manos durante 3 minutos.',
-          'Incorpora la sal y el aceite, amasando suavemente hasta integrar.',
-          'Realiza 4 plegados cada 30 minutos durante las siguientes 2 horas.',
-          'Deja fermentar a temperatura ambiente 4-6 horas hasta que duplique.',
-          'Forma una bola tensa y coloca en un banneton enharinado.',
-          'Refrigera 12-24 horas.',
-          'Hornea a 230°C con vapor los primeros 15 minutos, luego 20 minutos más a 210°C.',
-          'Deja enfriar completamente antes de cortar (mínimo 1 hora).'
+          'Mezcla todos los ingredientes hasta integrar.',
+          'Vierte en un molde apto para microondas.',
+          'Cocina en microondas durante 90 segundos.',
+          'Alternativa: hornea a 180°C durante 10-12 minutos.'
         ],
-        bodyFeel: 'Este pan te dejará satisfecho sin pesadez. La fermentación larga hace que los nutrientes estén disponibles y la digestión sea suave. Ideal para el desayuno o como acompañamiento.',
+        bodyFeel: 'Liviano. Sin gases. Sin barriga dura. Como si no hubieras comido pan, pero satisfecha.',
         tips: [
-          'Si no tienes masa madre, puedes usar 5g de levadura fresca, pero aumenta la fermentación en frío a 48 horas.',
-          'La espelta absorbe menos agua que el trigo, ajusta si la masa está muy húmeda.'
+          'Perfecto para quienes sienten que todo les cae pesado por la mañana.',
+          'Puedes agregarle especias como canela o vainilla para versión dulce.'
         ],
         section: 'parte-1-recetas',
         block: 'Recetas Esenciales'
       },
       {
-        id: 'pan-centeno-semillas',
-        title: 'Pan de Centeno con Semillas',
-        description: 'Denso, nutritivo y con un sabor profundo. Las semillas aportan textura y ácidos grasos esenciales.',
+        id: 'pan-de-linaza',
+        title: 'Pan de Linaza',
+        description: 'Fibra suave para empezar el día',
+        idealFor: 'Desayuno nutritivo',
         ingredients: [
-          '300g de harina de centeno integral',
-          '200g de harina de espelta',
-          '380ml de agua tibia',
-          '120g de masa madre de centeno',
-          '12g de sal marina',
-          '50g de semillas de girasol',
-          '30g de semillas de lino',
-          '30g de semillas de calabaza'
+          '3 cucharadas de harina de linaza',
+          '1 huevo',
+          '1 cucharada de agua',
+          '½ cucharadita de polvo para hornear',
+          '1 pizca de sal'
         ],
         preparation: [
-          'Tuesta ligeramente las semillas en una sartén seca.',
-          'Mezcla las harinas con el agua y deja reposar 45 minutos.',
-          'Añade la masa madre, mezcla 5 minutos.',
-          'Incorpora la sal y las semillas, integrando bien.',
-          'Este pan no necesita plegados. Deja fermentar 3-4 horas.',
-          'Vuelca en un molde rectangular engrasado.',
-          'Fermenta 2 horas más hasta que suba un tercio.',
-          'Hornea a 220°C durante 50-60 minutos.',
-          'Desmolda y deja enfriar sobre una rejilla al menos 4 horas.'
+          'Mezcla la harina de linaza con el polvo para hornear y la sal.',
+          'Agrega el huevo y el agua. Mezcla bien.',
+          'Cocina en microondas durante 90 segundos.',
+          'Deja reposar 1 minuto antes de desmoldar.'
         ],
-        bodyFeel: 'El centeno tiene un efecto saciante prolongado. Notarás energía estable durante horas, sin picos de azúcar. Excelente para quienes buscan control de peso.',
+        bodyFeel: 'Activa tu digestión sin inflarte. Te sientes satisfecha, no pesada.',
         tips: [
-          'El pan de centeno mejora con el tiempo. Espera 24 horas antes de consumir para mejor sabor.',
-          'Corta rebanadas finas, es muy nutritivo.',
-          'Conserva envuelto en tela hasta una semana.'
+          'La linaza es rica en omega-3 y fibra soluble.',
+          'Ideal para quienes necesitan regularidad digestiva.'
         ],
         section: 'parte-1-recetas',
         block: 'Recetas Esenciales'
       },
       {
-        id: 'focaccia-hierbas',
-        title: 'Focaccia de Hierbas Mediterráneas',
-        description: 'Esponjosa, aromática y festiva. Perfecta para compartir y disfrutar con aceite de oliva.',
+        id: 'pan-de-espinaca',
+        title: 'Pan de Espinaca',
+        description: 'Nutrición sin pesadez',
+        idealFor: 'Almuerzo ligero',
         ingredients: [
-          '400g de harina de espelta blanca',
-          '100g de harina de trigo sarraceno',
-          '380ml de agua tibia',
-          '80g de masa madre',
-          '10g de sal marina',
-          '60ml de aceite de oliva virgen extra',
-          'Romero fresco',
-          'Tomillo fresco',
-          'Escamas de sal marina',
-          'Aceitunas negras (opcional)'
+          '1 taza de espinacas frescas (picadas)',
+          '1 huevo',
+          '2 cucharadas de harina de almendras',
+          '½ cucharadita de polvo para hornear',
+          'Sal y pimienta al gusto'
         ],
         preparation: [
-          'Mezcla las harinas con el agua, reposa 30 minutos.',
-          'Añade la masa madre y 30ml de aceite, mezcla bien.',
-          'Incorpora la sal, amasa 4 minutos.',
-          'Plegados cada 30 minutos durante 2 horas.',
-          'Fermenta 4 horas a temperatura ambiente.',
-          'Vuelca en una bandeja aceitada (30x40cm), estira con los dedos.',
-          'Cubre con aceite restante, refrigera toda la noche.',
-          'Retira del frío 2 horas antes de hornear.',
-          'Haz hoyuelos con los dedos, añade hierbas, sal y aceitunas.',
-          'Hornea a 220°C durante 25-30 minutos hasta dorar.'
+          'Pica finamente las espinacas.',
+          'Mezcla todos los ingredientes en un bowl.',
+          'Vierte en molde apto para microondas.',
+          'Cocina 2 minutos en microondas o 15 minutos en horno a 180°C.'
         ],
-        bodyFeel: 'Ligera a pesar de su apariencia generosa. El aceite de oliva facilita la digestión y las hierbas aportan propiedades digestivas. Te sentirás nutrido, no pesado.',
+        bodyFeel: 'Ligero pero nutritivo. Te da energía sin pesarte.',
         tips: [
-          'Usa el mejor aceite de oliva que tengas, marca la diferencia.',
-          'Añade tomates cherry cortados para una versión de verano.',
-          'Congela porciones para tener siempre pan festivo disponible.'
+          'Puedes usar espinacas congeladas (descongela y escurre bien).',
+          'Añade queso parmesano rallado para más sabor.'
         ],
         section: 'parte-1-recetas',
         block: 'Recetas Esenciales'
       },
       {
-        id: 'pan-avena-miel',
-        title: 'Pan Suave de Avena y Miel',
-        description: 'Tierno, ligeramente dulce y reconfortante. Ideal para quienes prefieren texturas suaves.',
+        id: 'pan-de-almendras',
+        title: 'Pan de Almendras',
+        description: 'Estructura real para sándwich',
+        idealFor: 'Comida principal',
         ingredients: [
-          '350g de harina de espelta',
-          '100g de copos de avena finos',
-          '50g de avena molida',
-          '320ml de leche de avena tibia',
-          '80g de masa madre',
-          '40g de miel cruda',
-          '8g de sal marina',
-          '30g de mantequilla sin sal (temperatura ambiente)'
+          '1 taza de harina de almendras',
+          '2 huevos',
+          '2 cucharadas de aceite de oliva',
+          '½ cucharadita de polvo para hornear',
+          '¼ cucharadita de sal'
         ],
         preparation: [
-          'Hidrata los copos de avena en la leche tibia durante 20 minutos.',
-          'Mezcla las harinas con la avena hidratada.',
-          'Añade masa madre y miel, mezcla hasta homogeneizar.',
-          'Incorpora sal y mantequilla, amasa 6 minutos hasta suavizar.',
-          'Fermentación de 4-5 horas con plegados cada hora.',
-          'Forma un óvalo y coloca en molde de pan engrasado.',
-          'Fermenta 2-3 horas hasta que llegue al borde del molde.',
-          'Hornea a 190°C durante 40-45 minutos.',
-          'Retira del molde y enfría sobre rejilla.'
+          'Precalienta el horno a 180°C.',
+          'Mezcla todos los ingredientes secos.',
+          'Añade los huevos y el aceite. Integra bien.',
+          'Vierte en un molde pequeño engrasado.',
+          'Hornea 20-25 minutos hasta que esté dorado.'
         ],
-        bodyFeel: 'La avena regula el tránsito intestinal y estabiliza el azúcar en sangre. Este pan te dará una sensación de calidez y satisfacción, perfecto para empezar el día.',
+        bodyFeel: 'Sustancioso sin ser pesado. Te mantiene satisfecha por horas.',
         tips: [
-          'Tuesta rebanadas y unta con mantequilla y más miel.',
-          'Perfecto para sándwiches por su textura tierna.',
-          'Añade pasas o nueces para versión más nutritiva.'
+          'Este pan tiene estructura real. Perfecto para sándwiches.',
+          'Se conserva bien 3-4 días en refrigerador.'
         ],
         section: 'parte-1-recetas',
         block: 'Recetas Esenciales'
       },
       {
-        id: 'pan-sin-gluten',
-        title: 'Pan Rústico Sin Gluten',
-        description: 'Para los días de máximo cuidado digestivo. Textura sorprendente sin gluten.',
+        id: 'pan-de-garbanzos',
+        title: 'Pan de Garbanzos',
+        description: 'Saciante sin pesadez',
+        idealFor: 'Comida principal',
         ingredients: [
-          '200g de harina de arroz integral',
-          '100g de harina de trigo sarraceno',
-          '100g de fécula de tapioca',
-          '50g de harina de almendra',
-          '350ml de agua tibia',
-          '5g de levadura seca',
-          '10g de psyllium en polvo',
-          '8g de sal marina',
-          '30ml de aceite de oliva',
-          '1 cucharada de miel'
+          '1 taza de harina de garbanzos',
+          '1 huevo',
+          '½ taza de agua',
+          '2 cucharadas de aceite de oliva',
+          '½ cucharadita de sal',
+          'Hierbas al gusto (romero, tomillo)'
         ],
         preparation: [
-          'Mezcla el psyllium con el agua y deja reposar 5 minutos hasta gelificar.',
-          'Combina todas las harinas secas.',
-          'Añade la levadura a las harinas y mezcla.',
-          'Incorpora el gel de psyllium, aceite y miel.',
-          'Mezcla vigorosamente 3 minutos (esta masa es más líquida).',
-          'Vierte en molde engrasado y forrado.',
-          'Deja fermentar 90 minutos cubierto.',
-          'Hornea a 200°C durante 50-55 minutos.',
-          'Deja enfriar completamente en el molde antes de desmoldar.'
+          'Mezcla la harina de garbanzos con el agua hasta eliminar grumos.',
+          'Añade el huevo, aceite, sal y hierbas.',
+          'Vierte en sartén antiadherente caliente.',
+          'Cocina a fuego medio-bajo 5 minutos por cada lado.'
         ],
-        bodyFeel: 'Gentil con el sistema digestivo más sensible. Te sentirás ligero y con energía. Este pan es ideal cuando necesitas un descanso del gluten.',
+        bodyFeel: 'Llena sin inflar. Energía sostenida sin picos.',
         tips: [
-          'El psyllium es esencial para la estructura, no lo omitas.',
-          'Mejora en sabor al día siguiente, tuesta para disfrutar.',
-          'Congela rebanado para tener siempre disponible.'
+          'La harina de garbanzos es rica en proteína vegetal.',
+          'Excelente para quienes buscan opciones más sustanciosas.'
+        ],
+        section: 'parte-1-recetas',
+        block: 'Recetas Esenciales'
+      },
+      {
+        id: 'pan-de-calabaza',
+        title: 'Pan de Calabaza',
+        description: 'Suave y amable con la digestión',
+        idealFor: 'Cualquier momento',
+        ingredients: [
+          '½ taza de puré de calabaza',
+          '1 huevo',
+          '3 cucharadas de harina de almendras',
+          '½ cucharadita de canela',
+          '¼ cucharadita de polvo para hornear',
+          '1 pizca de sal'
+        ],
+        preparation: [
+          'Mezcla el puré de calabaza con el huevo.',
+          'Añade los ingredientes secos y mezcla bien.',
+          'Vierte en molde engrasado.',
+          'Hornea a 180°C durante 20 minutos.'
+        ],
+        bodyFeel: 'Reconfortante sin consecuencias. Digestión suave.',
+        tips: [
+          'Puedes usar calabaza enlatada (sin azúcar añadida).',
+          'La canela ayuda a regular el azúcar en sangre.'
+        ],
+        section: 'parte-1-recetas',
+        block: 'Recetas Esenciales'
+      },
+      {
+        id: 'pan-de-platano',
+        title: 'Pan de Plátano',
+        description: 'Confort sin castigo',
+        idealFor: 'Snack o postre',
+        ingredients: [
+          '1 plátano maduro',
+          '1 huevo',
+          '2 cucharadas de harina de almendras',
+          '¼ cucharadita de polvo para hornear',
+          '1 pizca de canela'
+        ],
+        preparation: [
+          'Machaca el plátano hasta hacer puré.',
+          'Añade el huevo y mezcla bien.',
+          'Incorpora la harina, polvo para hornear y canela.',
+          'Cocina en microondas 2 minutos o en horno 15 minutos a 180°C.'
+        ],
+        bodyFeel: 'Dulce satisfacción sin hinchazón. Energía natural.',
+        tips: [
+          'Cuanto más maduro el plátano, más dulce el pan.',
+          'Perfecto para satisfacer antojos de forma saludable.'
+        ],
+        section: 'parte-1-recetas',
+        block: 'Recetas Esenciales'
+      },
+      {
+        id: 'pan-de-queso',
+        title: 'Pan de Queso',
+        description: 'Placer real, sin inflamación',
+        idealFor: 'Snack satisfactorio',
+        ingredients: [
+          '1 huevo',
+          '¼ taza de queso mozzarella rallado',
+          '2 cucharadas de queso crema',
+          '2 cucharadas de harina de almendras',
+          '¼ cucharadita de polvo para hornear'
+        ],
+        preparation: [
+          'Derrite el queso mozzarella con el queso crema (microondas 30 seg).',
+          'Añade el huevo y mezcla rápidamente.',
+          'Incorpora la harina y el polvo para hornear.',
+          'Forma bolitas y hornea a 200°C durante 12-15 minutos.'
+        ],
+        bodyFeel: 'Satisface el antojo de algo salado sin las consecuencias.',
+        tips: [
+          'Trabaja rápido mientras el queso está caliente.',
+          'Puedes añadir ajo en polvo o hierbas italianas.'
         ],
         section: 'parte-1-recetas',
         block: 'Recetas Esenciales'
@@ -299,184 +469,390 @@ Cuanto más larga la fermentación, mejor la digestión. Planifica tus panes con
   },
   {
     id: 'parte-2-rotacion',
-    title: 'Parte 2: Sistema de Rotación',
-    type: 'part',
-    content: `## El Sistema de Rotación
+    title: 'Parte 2: Rotación Sin Hinchazón',
+    content: `# Variedad para Cada Día
 
-La clave para evitar sensibilidades alimentarias es la variedad. Nuestro cuerpo puede desarrollar intolerancia a cualquier alimento que consumamos en exceso.
+La clave para una digestión feliz es la rotación. No comer lo mismo todos los días.
 
-### Principios del sistema:
+Estas 11 recetas adicionales te dan opciones para variar durante la semana. Algunas son versiones diferentes de las esenciales, otras son completamente nuevas.
 
-**Regla de los 4 días**
-No repitas la misma harina en menos de 4 días. Esto permite que tu sistema digestivo descanse y se recupere.
-
-**Calendario semanal sugerido:**
-- Lunes: Pan de espelta
-- Martes: Sin pan (día de descanso)
-- Miércoles: Pan de centeno
-- Jueves: Pan sin gluten
-- Viernes: Sin pan
-- Sábado: Focaccia de espelta
-- Domingo: Pan de avena
-
-### Escucha tu cuerpo
-
-Mantén un diario digestivo las primeras semanas:
-- Qué pan comiste
-- Cantidad consumida
-- Cómo te sentiste después
-- Calidad del sueño
-- Nivel de energía
-
-Esto te ayudará a identificar qué panes funcionan mejor para ti.
-
-### Ajustes personales
-
-Si notas molestias con algún pan específico:
-1. Aumenta el tiempo de fermentación
-2. Reduce la cantidad consumida
-3. Prueba otra harina de la misma receta
-4. Descansa esa receta durante 2 semanas`,
+Rota entre ellas para:
+- Evitar sensibilidades por repetición
+- Mantener tu alimentación interesante
+- Descubrir qué funciona mejor para tu cuerpo`,
     recipes: [
       {
-        id: 'pan-semana-1',
-        title: 'Pan de Rotación Semana 1 - Espelta y Amapola',
-        description: 'Ligero y aromático, perfecto para iniciar el ciclo de rotación.',
+        id: 'pan-de-coliflor',
+        title: 'Pan de Coliflor',
+        description: 'Ultra bajo en carbohidratos',
+        idealFor: 'Cena ligera',
         ingredients: [
-          '450g de harina de espelta integral',
-          '50g de harina de arroz',
-          '330ml de agua',
-          '100g de masa madre',
-          '10g de sal',
-          '30g de semillas de amapola'
+          '2 tazas de coliflor rallada',
+          '1 huevo',
+          '¼ taza de queso parmesano',
+          'Sal y pimienta al gusto',
+          'Hierbas italianas (opcional)'
         ],
         preparation: [
-          'Autólisis de harinas y agua por 40 minutos.',
-          'Añade masa madre, mezcla 4 minutos.',
-          'Incorpora sal y semillas de amapola.',
-          'Cuatro plegados cada 30 minutos.',
-          'Fermentación 5 horas a temperatura ambiente.',
-          'Forma y coloca en banneton.',
-          'Refrigera 12-18 horas.',
-          'Hornea a 230°C con vapor 15 minutos, luego 200°C 25 minutos.',
-          'Enfría 1 hora antes de cortar.'
+          'Ralla la coliflor y cocínala en microondas 4 minutos.',
+          'Escurre muy bien el exceso de agua (importante).',
+          'Mezcla con el huevo, queso y condimentos.',
+          'Forma una masa y aplánala en bandeja con papel pergamino.',
+          'Hornea a 200°C durante 20 minutos hasta que esté dorada.'
         ],
-        bodyFeel: 'Digestión fluida y saciedad duradera. Las semillas de amapola aportan calcio y las fibras de espelta alimentan tu microbiota.',
-        section: 'parte-2-rotacion',
-        block: 'Sistema de Rotación'
-      },
-      {
-        id: 'pan-semana-2',
-        title: 'Pan de Rotación Semana 2 - Centeno Oscuro',
-        description: 'Intenso y profundo, para el día de centeno en tu rotación.',
-        ingredients: [
-          '400g de harina de centeno integral',
-          '100g de harina de centeno blanca',
-          '400ml de agua tibia',
-          '150g de masa madre de centeno',
-          '12g de sal',
-          '1 cucharada de melaza',
-          '1 cucharadita de alcaravea'
-        ],
-        preparation: [
-          'Mezcla todos los ingredientes en un bowl grande.',
-          'Bate vigorosamente 5 minutos (el centeno no desarrolla gluten igual).',
-          'Vierte en molde de pan engrasado.',
-          'Alisa la superficie con una espátula húmeda.',
-          'Fermenta 3-4 horas hasta que crezca un tercio.',
-          'Hornea a 200°C durante 60-70 minutos.',
-          'Retira del molde y enfría al menos 12 horas antes de cortar.'
-        ],
-        bodyFeel: 'Saciedad profunda y energía constante. El centeno libera glucosa lentamente, evitando picos de insulina. Ideal para mantener el foco mental.',
+        bodyFeel: 'Casi imperceptible. Como si no hubieras comido nada pesado.',
         tips: [
-          'Este pan DEBE reposar 12-24 horas para que el almidón se estabilice.',
-          'Corta rebanadas muy finas, es muy nutritivo.'
+          'Escurrir bien la coliflor es el secreto del éxito.',
+          'Perfecta como base para pizza saludable.'
         ],
         section: 'parte-2-rotacion',
-        block: 'Sistema de Rotación'
+        block: 'Rotación Sin Hinchazón'
       },
       {
-        id: 'pan-semana-3',
-        title: 'Pan de Rotación Semana 3 - Trigo Sarraceno y Nueces',
-        description: 'Sin gluten, rico en proteínas y minerales. Sabor terroso con el crunch de las nueces.',
+        id: 'pan-de-zucchini',
+        title: 'Pan de Zucchini',
+        description: 'Fresco y digestivo',
+        idealFor: 'Almuerzo de verano',
         ingredients: [
-          '300g de harina de trigo sarraceno',
-          '100g de fécula de patata',
-          '50g de harina de arroz',
-          '350ml de agua tibia',
-          '5g de levadura seca',
-          '10g de psyllium',
-          '8g de sal',
-          '100g de nueces troceadas',
-          '2 cucharadas de aceite de nuez'
+          '1 zucchini mediano rallado',
+          '1 huevo',
+          '3 cucharadas de harina de almendras',
+          '¼ taza de queso feta desmenuzado',
+          'Sal, pimienta y eneldo'
         ],
         preparation: [
-          'Hidrata el psyllium en el agua por 5 minutos.',
-          'Mezcla las harinas con la levadura.',
-          'Combina el gel de psyllium con aceite.',
-          'Une secos y líquidos, mezcla 3 minutos.',
-          'Añade nueces y sal, integra bien.',
-          'Vierte en molde engrasado.',
-          'Fermenta 90 minutos tapado.',
-          'Hornea a 200°C durante 50-55 minutos.',
-          'Enfría completamente en el molde.'
+          'Ralla el zucchini y escurre el exceso de agua.',
+          'Mezcla con el huevo, harina y condimentos.',
+          'Añade el queso feta.',
+          'Cocina en sartén como tortitas, 3 minutos por lado.'
         ],
-        bodyFeel: 'Ligero pero sustancioso. El trigo sarraceno es rico en rutina, beneficiosa para la circulación. Las nueces aportan omega-3 para la salud cerebral.',
+        bodyFeel: 'Refrescante. Ligero. Perfecto para días calurosos.',
+        tips: [
+          'El zucchini suelta mucha agua, escurre bien.',
+          'Puedes sustituir el feta por cualquier queso que te guste.'
+        ],
         section: 'parte-2-rotacion',
-        block: 'Sistema de Rotación'
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-zanahoria',
+        title: 'Pan de Zanahoria',
+        description: 'Dulce natural sin azúcar',
+        idealFor: 'Desayuno o merienda',
+        ingredients: [
+          '1 taza de zanahoria rallada',
+          '1 huevo',
+          '3 cucharadas de harina de almendras',
+          '½ cucharadita de canela',
+          '¼ cucharadita de jengibre molido',
+          '¼ cucharadita de polvo para hornear'
+        ],
+        preparation: [
+          'Mezcla la zanahoria rallada con el huevo.',
+          'Añade los ingredientes secos.',
+          'Vierte en molde engrasado.',
+          'Hornea a 180°C durante 25 minutos.'
+        ],
+        bodyFeel: 'Dulce satisfacción sin picos de azúcar. Energía estable.',
+        tips: [
+          'La zanahoria aporta dulzor natural.',
+          'Añade nueces picadas para más textura.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-espinaca-sarten',
+        title: 'Pan de Espinaca (versión sartén)',
+        description: 'Rápido y sin horno',
+        idealFor: 'Cuando tienes prisa',
+        ingredients: [
+          '1 taza de espinacas picadas',
+          '2 huevos',
+          '2 cucharadas de queso parmesano',
+          'Sal, pimienta y nuez moscada'
+        ],
+        preparation: [
+          'Bate los huevos con el queso y condimentos.',
+          'Añade las espinacas picadas.',
+          'Vierte en sartén antiadherente caliente.',
+          'Cocina a fuego bajo 3-4 minutos por lado.'
+        ],
+        bodyFeel: 'Rápido de hacer, rápido de digerir.',
+        tips: [
+          'Más parecido a una tortilla, pero funciona como pan.',
+          'Lista en menos de 10 minutos.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-garbanzos-horno',
+        title: 'Pan de Garbanzos (versión horno)',
+        description: 'Más esponjoso y alto',
+        idealFor: 'Comida principal',
+        ingredients: [
+          '1 taza de harina de garbanzos',
+          '2 huevos',
+          '¼ taza de aceite de oliva',
+          '½ taza de agua',
+          '1 cucharadita de polvo para hornear',
+          'Sal y romero'
+        ],
+        preparation: [
+          'Mezcla todos los ingredientes hasta obtener masa homogénea.',
+          'Vierte en molde engrasado.',
+          'Hornea a 180°C durante 25-30 minutos.',
+          'Deja enfriar antes de cortar.'
+        ],
+        bodyFeel: 'Sustancioso y satisfactorio. Proteína vegetal que llena bien.',
+        tips: [
+          'Este pan sube más que la versión de sartén.',
+          'Perfecto para cortar en rebanadas.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-platano-verde',
+        title: 'Pan de Plátano Verde',
+        description: 'Almidón resistente amigo del intestino',
+        idealFor: 'Desayuno energético',
+        ingredients: [
+          '1 plátano verde',
+          '1 huevo',
+          '1 cucharada de aceite de coco',
+          '¼ cucharadita de sal',
+          'Canela al gusto'
+        ],
+        preparation: [
+          'Pela y corta el plátano verde en trozos.',
+          'Licúa con el huevo, aceite y condimentos.',
+          'Vierte en sartén antiadherente.',
+          'Cocina a fuego medio 4 minutos por lado.'
+        ],
+        bodyFeel: 'Energía sostenida. El almidón resistente alimenta tu microbiota.',
+        tips: [
+          'El plátano verde tiene almidón resistente, excelente para la flora intestinal.',
+          'Sabe diferente al plátano maduro, más neutro.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-aguacate',
+        title: 'Pan de Aguacate',
+        description: 'Cremoso y nutritivo',
+        idealFor: 'Desayuno completo',
+        ingredients: [
+          '½ aguacate maduro',
+          '1 huevo',
+          '2 cucharadas de harina de almendras',
+          '¼ cucharadita de polvo para hornear',
+          'Sal y pimienta'
+        ],
+        preparation: [
+          'Machaca el aguacate hasta hacer puré.',
+          'Mezcla con el huevo.',
+          'Añade la harina, polvo para hornear y condimentos.',
+          'Cocina en microondas 90 segundos o en sartén 3 minutos por lado.'
+        ],
+        bodyFeel: 'Cremoso y satisfactorio. Grasas buenas que sacian.',
+        tips: [
+          'Usa aguacate bien maduro para mejor textura.',
+          'Rico en grasas saludables y potasio.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-queso-cottage',
+        title: 'Pan de Queso Cottage',
+        description: 'Alto en proteína',
+        idealFor: 'Post-ejercicio',
+        ingredients: [
+          '½ taza de queso cottage',
+          '1 huevo',
+          '3 cucharadas de harina de almendras',
+          '¼ cucharadita de polvo para hornear',
+          'Sal al gusto'
+        ],
+        preparation: [
+          'Mezcla el queso cottage con el huevo.',
+          'Añade la harina, polvo para hornear y sal.',
+          'Vierte en molde apto para microondas.',
+          'Cocina 90 segundos en microondas.'
+        ],
+        bodyFeel: 'Proteína que construye, no que inflama.',
+        tips: [
+          'Excelente fuente de proteína de alta calidad.',
+          'Perfecto después de entrenar.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-linaza-taza',
+        title: 'Pan de Linaza en Taza',
+        description: 'Individual y rápido',
+        idealFor: 'Porción individual',
+        ingredients: [
+          '3 cucharadas de harina de linaza',
+          '1 huevo',
+          '1 cucharada de mantequilla derretida',
+          '½ cucharadita de polvo para hornear',
+          'Sal al gusto'
+        ],
+        preparation: [
+          'Mezcla todos los ingredientes en una taza grande.',
+          'Cocina en microondas 90 segundos.',
+          'Deja reposar 30 segundos.',
+          'Voltea la taza para desmoldar.'
+        ],
+        bodyFeel: 'Rápido, fácil, sin desastre. Digestión sin drama.',
+        tips: [
+          'Perfecto cuando solo quieres una porción.',
+          'La taza debe ser grande para que no se desborde.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-de-tahini',
+        title: 'Pan de Tahini y Nuez',
+        description: 'Sabor intenso y nutritivo',
+        idealFor: 'Merienda sofisticada',
+        ingredients: [
+          '2 cucharadas de tahini',
+          '1 huevo',
+          '1 cucharada de harina de almendras',
+          '¼ cucharadita de polvo para hornear',
+          '1 pizca de sal',
+          'Nueces picadas (opcional)'
+        ],
+        preparation: [
+          'Mezcla el tahini con el huevo hasta integrar.',
+          'Añade la harina, polvo para hornear y sal.',
+          'Incorpora las nueces si las usas.',
+          'Cocina en microondas 90 segundos.'
+        ],
+        bodyFeel: 'Rico en minerales. Satisface sin excesos.',
+        tips: [
+          'El tahini es rico en calcio y hierro.',
+          'Sabor a sésamo que combina con todo.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
+      },
+      {
+        id: 'pan-nube-gourmet',
+        title: 'Pan Nube Gourmet',
+        description: 'La versión elevada',
+        idealFor: 'Ocasiones especiales',
+        ingredients: [
+          '2 huevos (separados)',
+          '2 cucharadas de queso crema',
+          '¼ cucharadita de cremor tártaro',
+          '1 pizca de sal'
+        ],
+        preparation: [
+          'Separa las claras de las yemas.',
+          'Bate las claras con el cremor tártaro hasta punto de nieve.',
+          'Mezcla las yemas con el queso crema.',
+          'Incorpora suavemente las claras a las yemas.',
+          'Forma montoncitos en bandeja con papel pergamino.',
+          'Hornea a 150°C durante 25-30 minutos.'
+        ],
+        bodyFeel: 'Aire puro. Como comer una nube de verdad.',
+        tips: [
+          'La técnica de separar huevos hace toda la diferencia.',
+          'Estos panes son tan ligeros que casi flotan.'
+        ],
+        section: 'parte-2-rotacion',
+        block: 'Rotación Sin Hinchazón'
       }
     ]
   },
   {
     id: 'cierre',
-    title: 'Cierre: Tu Nuevo Camino',
-    type: 'closing',
-    content: `## Has llegado al final del Manual
+    title: 'Cierre',
+    content: `# El problema nunca fue tu cuerpo
 
-Pero esto es solo el comienzo de tu viaje.
+Llegaste hasta aquí.
 
-### Lo que has aprendido:
-- Por qué el pan convencional inflama
-- Cómo la fermentación transforma el gluten
-- Técnicas para panes digestivos
-- Recetas fundamentales probadas
-- Un sistema de rotación sostenible
+Y eso significa que ya no eres la misma persona que empezó a leer este libro.
 
-### Próximos pasos:
+Ahora sabes que la hinchazón no es tu culpa. Que tu cuerpo no está roto. Que no eres "demasiado sensible" ni "exagerada".
 
-**Semana 1-2:** Prepara tu masa madre y elabora el Pan de Espelta Básico.
-
-**Semana 3-4:** Incorpora el Pan de Centeno con Semillas.
-
-**Mes 2:** Implementa el sistema de rotación completo.
-
-**Mes 3 en adelante:** Experimenta con tus propias variaciones.
-
-### Recuerda siempre:
-- El tiempo es tu ingrediente secreto
-- Escucha a tu cuerpo
-- La variedad previene sensibilidades
-- El pan real nutre, no inflama
-
-### Una última reflexión
-
-El pan ha sido el alimento fundamental de la humanidad durante miles de años. Nuestros ancestros no tenían problemas digestivos con el pan porque lo elaboraban correctamente: fermentación lenta, harinas integrales, tiempo y paciencia.
-
-Al recuperar estas técnicas, no solo mejoras tu digestión. Reconectas con una tradición milenaria de nutrición consciente.
-
-**Que cada pan que hornees te acerque más a tu bienestar.**
+Simplemente estabas comiendo algo que no era realmente pan.
 
 ---
 
-*Gracias por confiar en Pan Sin Hinchazón.*
-*Tu cuerpo merece pan de verdad.*`
+## Lo Que Has Aprendido
+
+✓ Por qué el pan comercial te inflama (y no es el gluten)
+
+✓ Cómo identificar los panes que te hacen daño
+
+✓ Qué pan elegir según el momento del día
+
+✓ 19 recetas que puedes hacer en minutos
+
+✓ Cómo escuchar a tu cuerpo y ajustar según lo que funcione
+
+---
+
+## El Camino Adelante
+
+No tienes que ser perfecta.
+
+No tienes que hacer todas las recetas.
+
+No tienes que renunciar al pan para siempre.
+
+Solo tienes que elegir mejor. Y ahora sabes cómo.
+
+---
+
+## Mi Invitación
+
+Empieza con una receta. La que más te llame la atención.
+
+Prepárala mañana.
+
+Y observa cómo te sientes.
+
+Ese es el único experimento que importa.
+
+Tu cuerpo te dirá la verdad. Solo tienes que escucharlo.
+
+---
+
+## Gracias
+
+Por confiar en este proceso.
+Por darte la oportunidad de sentirte mejor.
+Por elegirte a ti misma.
+
+El pan real existe.
+Y ahora es tuyo.
+
+---
+
+*Con cariño,*
+
+*Tu guía hacia el pan sin hinchazón*`
   }
 ];
 
+// Utility functions
 export const getAllRecipes = (): Recipe[] => {
-  return ebookSections
-    .filter(section => section.recipes)
-    .flatMap(section => section.recipes || []);
+  return ebookSections.reduce((acc: Recipe[], section) => {
+    if (section.recipes) {
+      return [...acc, ...section.recipes];
+    }
+    return acc;
+  }, []);
 };
 
 export const getRecipeById = (id: string): Recipe | undefined => {
@@ -488,13 +864,19 @@ export const getSectionById = (id: string): Section | undefined => {
 };
 
 export const getNextRecipe = (currentId: string): Recipe | undefined => {
-  const recipes = getAllRecipes();
-  const currentIndex = recipes.findIndex(r => r.id === currentId);
-  return recipes[currentIndex + 1];
+  const allRecipes = getAllRecipes();
+  const currentIndex = allRecipes.findIndex(recipe => recipe.id === currentId);
+  if (currentIndex !== -1 && currentIndex < allRecipes.length - 1) {
+    return allRecipes[currentIndex + 1];
+  }
+  return undefined;
 };
 
 export const getPreviousRecipe = (currentId: string): Recipe | undefined => {
-  const recipes = getAllRecipes();
-  const currentIndex = recipes.findIndex(r => r.id === currentId);
-  return recipes[currentIndex - 1];
+  const allRecipes = getAllRecipes();
+  const currentIndex = allRecipes.findIndex(recipe => recipe.id === currentId);
+  if (currentIndex > 0) {
+    return allRecipes[currentIndex - 1];
+  }
+  return undefined;
 };
