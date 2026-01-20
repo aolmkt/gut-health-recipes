@@ -105,11 +105,11 @@ const SectionPage = () => {
         {/* Header */}
         <header className="bg-cream pt-20 pb-12 md:pt-24 md:pb-16 px-6">
           <div className="max-w-3xl mx-auto">
-            <p className="text-sm text-accent uppercase tracking-wider mb-4">
-              {section.type === 'intro' && 'Introducción'}
-              {section.type === 'block' && 'Bloque'}
-              {section.type === 'part' && 'Parte'}
-              {section.type === 'closing' && 'Cierre'}
+          <p className="text-sm text-accent uppercase tracking-wider mb-4">
+              {section.id === 'introduccion' && 'Introducción'}
+              {section.id.startsWith('bloque-') && 'Bloque'}
+              {section.id.startsWith('parte-') && 'Parte'}
+              {section.id === 'cierre' && 'Cierre'}
             </p>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-foreground leading-tight">
               {section.title}
