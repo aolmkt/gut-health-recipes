@@ -268,11 +268,9 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         ],
         preparation: [
           'Mezcla todos los ingredientes hasta integrar.',
-          'Vierte en un molde apto para microondas.',
-          'Cocina en microondas durante 90 segundos.',
-          'Alternativa: hornea a 180°C durante 10-12 minutos.'
+          'Cocina en microondas durante 3 minutos o en horno a 180 °C durante 12 minutos.'
         ],
-        bodyFeel: 'Liviano. Sin gases. Sin barriga dura. Como si no hubieras comido pan, pero satisfecha.',
+        bodyFeel: 'Liviano. Sin gases. Sin barriga dura.',
         tips: [
           'Perfecto para quienes sienten que todo les cae pesado por la mañana.',
           'Puedes agregarle especias como canela o vainilla para versión dulce.'
@@ -284,21 +282,18 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         id: 'pan-de-linaza',
         title: 'Pan de Linaza',
         description: 'Fibra suave para empezar el día',
-        idealFor: 'Desayuno nutritivo',
+        idealFor: 'Desayuno ligero',
         ingredients: [
-          '3 cucharadas de harina de linaza',
+          '2 cucharadas de linaza molida',
           '1 huevo',
-          '1 cucharada de agua',
-          '½ cucharadita de polvo para hornear',
-          '1 pizca de sal'
+          '1 cucharada de yogur',
+          '½ cucharadita de polvo para hornear'
         ],
         preparation: [
-          'Mezcla la harina de linaza con el polvo para hornear y la sal.',
-          'Agrega el huevo y el agua. Mezcla bien.',
-          'Cocina en microondas durante 90 segundos.',
-          'Deja reposar 1 minuto antes de desmoldar.'
+          'Mezcla todo en una taza.',
+          'Cocina en microondas durante 3 minutos.'
         ],
-        bodyFeel: 'Activa tu digestión sin inflarte. Te sientes satisfecha, no pesada.',
+        bodyFeel: 'Digestión tranquila. Menos inflamación intestinal.',
         tips: [
           'La linaza es rica en omega-3 y fibra soluble.',
           'Ideal para quienes necesitan regularidad digestiva.'
@@ -310,21 +305,20 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         id: 'pan-de-espinaca',
         title: 'Pan de Espinaca',
         description: 'Nutrición sin pesadez',
-        idealFor: 'Almuerzo ligero',
+        idealFor: 'Desayuno o comida ligera',
         ingredients: [
-          '1 taza de espinacas frescas (picadas)',
+          '2 tazas de espinaca fresca',
           '1 huevo',
-          '2 cucharadas de harina de almendras',
-          '½ cucharadita de polvo para hornear',
-          'Sal y pimienta al gusto'
+          '1 cucharada de yogur griego',
+          '3 cucharadas de harina de almendras',
+          '1 cucharadita de polvo para hornear',
+          'Sal a gusto'
         ],
         preparation: [
-          'Pica finamente las espinacas.',
-          'Mezcla todos los ingredientes en un bowl.',
-          'Vierte en molde apto para microondas.',
-          'Cocina 2 minutos en microondas o 15 minutos en horno a 180°C.'
+          'Procesa todo hasta obtener una mezcla homogénea.',
+          'Cocina en sartén tapada a fuego bajo o en horno a 180 °C durante 15 minutos.'
         ],
-        bodyFeel: 'Ligero pero nutritivo. Te da energía sin pesarte.',
+        bodyFeel: 'Alimentada. Ligera. Sin hinchazón.',
         tips: [
           'Puedes usar espinacas congeladas (descongela y escurre bien).',
           'Añade queso parmesano rallado para más sabor.'
@@ -336,22 +330,22 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         id: 'pan-de-almendras',
         title: 'Pan de Almendras',
         description: 'Estructura real para sándwich',
-        idealFor: 'Comida principal',
+        idealFor: 'Comida o cena',
         ingredients: [
-          '1 taza de harina de almendras',
-          '2 huevos',
-          '2 cucharadas de aceite de oliva',
-          '½ cucharadita de polvo para hornear',
-          '¼ cucharadita de sal'
+          '2 tazas de harina de almendras',
+          '4 huevos',
+          '3 cucharadas de linaza molida',
+          '1 cucharada de polvo para hornear',
+          '½ taza de agua',
+          '½ taza de aceite de oliva',
+          'Sal a gusto'
         ],
         preparation: [
-          'Precalienta el horno a 180°C.',
-          'Mezcla todos los ingredientes secos.',
-          'Añade los huevos y el aceite. Integra bien.',
-          'Vierte en un molde pequeño engrasado.',
-          'Hornea 20-25 minutos hasta que esté dorado.'
+          'Mezcla los ingredientes secos.',
+          'Agrega los líquidos y mezcla bien.',
+          'Hornea a 180 °C durante 35–40 minutos.'
         ],
-        bodyFeel: 'Sustancioso sin ser pesado. Te mantiene satisfecha por horas.',
+        bodyFeel: 'Saciedad sin sueño. Estabilidad.',
         tips: [
           'Este pan tiene estructura real. Perfecto para sándwiches.',
           'Se conserva bien 3-4 días en refrigerador.'
@@ -365,20 +359,16 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         description: 'Saciante sin pesadez',
         idealFor: 'Comida principal',
         ingredients: [
-          '1 taza de harina de garbanzos',
+          '4 cucharadas de garbanzos cocidos',
           '1 huevo',
-          '½ taza de agua',
-          '2 cucharadas de aceite de oliva',
-          '½ cucharadita de sal',
-          'Hierbas al gusto (romero, tomillo)'
+          '½ cucharadita de polvo para hornear',
+          'Sal a gusto'
         ],
         preparation: [
-          'Mezcla la harina de garbanzos con el agua hasta eliminar grumos.',
-          'Añade el huevo, aceite, sal y hierbas.',
-          'Vierte en sartén antiadherente caliente.',
-          'Cocina a fuego medio-bajo 5 minutos por cada lado.'
+          'Procesa todo hasta obtener una crema espesa.',
+          'Cocina en microondas durante 4 minutos o en horno a 180 °C durante 15 minutos.'
         ],
-        bodyFeel: 'Llena sin inflar. Energía sostenida sin picos.',
+        bodyFeel: 'Satisfecha. Energía estable. Sin gases.',
         tips: [
           'La harina de garbanzos es rica en proteína vegetal.',
           'Excelente para quienes buscan opciones más sustanciosas.'
@@ -390,22 +380,18 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         id: 'pan-de-calabaza',
         title: 'Pan de Calabaza',
         description: 'Suave y amable con la digestión',
-        idealFor: 'Cualquier momento',
+        idealFor: 'Merienda o comida ligera',
         ingredients: [
           '½ taza de puré de calabaza',
           '1 huevo',
-          '3 cucharadas de harina de almendras',
-          '½ cucharadita de canela',
-          '¼ cucharadita de polvo para hornear',
+          '½ cucharadita de polvo para hornear',
           '1 pizca de sal'
         ],
         preparation: [
-          'Mezcla el puré de calabaza con el huevo.',
-          'Añade los ingredientes secos y mezcla bien.',
-          'Vierte en molde engrasado.',
-          'Hornea a 180°C durante 20 minutos.'
+          'Mezcla todo hasta integrar.',
+          'Cocina en microondas durante 3–4 minutos o en horno a 180 °C durante 15 minutos.'
         ],
-        bodyFeel: 'Reconfortante sin consecuencias. Digestión suave.',
+        bodyFeel: 'Confort.',
         tips: [
           'Puedes usar calabaza enlatada (sin azúcar añadida).',
           'La canela ayuda a regular el azúcar en sangre.'
@@ -417,21 +403,18 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         id: 'pan-de-platano',
         title: 'Pan de Plátano',
         description: 'Confort sin castigo',
-        idealFor: 'Snack o postre',
+        idealFor: 'Antojo',
         ingredients: [
           '1 plátano maduro',
           '1 huevo',
-          '2 cucharadas de harina de almendras',
           '¼ cucharadita de polvo para hornear',
-          '1 pizca de canela'
+          '1 pizca de sal'
         ],
         preparation: [
-          'Machaca el plátano hasta hacer puré.',
-          'Añade el huevo y mezcla bien.',
-          'Incorpora la harina, polvo para hornear y canela.',
-          'Cocina en microondas 2 minutos o en horno 15 minutos a 180°C.'
+          'Procesa todo hasta obtener una mezcla cremosa.',
+          'Hornea a 180 °C durante 15–18 minutos.'
         ],
-        bodyFeel: 'Dulce satisfacción sin hinchazón. Energía natural.',
+        bodyFeel: 'Satisfecha emocionalmente. Sin culpa.',
         tips: [
           'Cuanto más maduro el plátano, más dulce el pan.',
           'Perfecto para satisfacer antojos de forma saludable.'
@@ -443,21 +426,17 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
         id: 'pan-de-queso',
         title: 'Pan de Queso',
         description: 'Placer real, sin inflamación',
-        idealFor: 'Snack satisfactorio',
+        idealFor: 'Antojo y confort',
         ingredients: [
-          '1 huevo',
-          '¼ taza de queso mozzarella rallado',
-          '2 cucharadas de queso crema',
-          '2 cucharadas de harina de almendras',
-          '¼ cucharadita de polvo para hornear'
+          '2 huevos',
+          '½ taza de queso cottage o mozzarella rallado',
+          'Sal a gusto'
         ],
         preparation: [
-          'Derrite el queso mozzarella con el queso crema (microondas 30 seg).',
-          'Añade el huevo y mezcla rápidamente.',
-          'Incorpora la harina y el polvo para hornear.',
-          'Forma bolitas y hornea a 200°C durante 12-15 minutos.'
+          'Mezcla todo.',
+          'Cocina en waflera, sartén o en horno a 180 °C durante 15 minutos.'
         ],
-        bodyFeel: 'Satisface el antojo de algo salado sin las consecuencias.',
+        bodyFeel: 'Confort inmediato. Cero arrepentimiento.',
         tips: [
           'Trabaja rápido mientras el queso está caliente.',
           'Puedes añadir ajo en polvo o hierbas italianas.'
@@ -484,23 +463,21 @@ Rota entre ellas para:
       {
         id: 'pan-de-coliflor',
         title: 'Pan de Coliflor',
-        description: 'Ultra bajo en carbohidratos',
-        idealFor: 'Cena ligera',
+        description: 'Ligero, pero estructurado',
+        idealFor: 'Comida o sándwich ligero',
         ingredients: [
-          '2 tazas de coliflor rallada',
+          '4 ramilletes medianos de coliflor',
           '1 huevo',
-          '¼ taza de queso parmesano',
-          'Sal y pimienta al gusto',
-          'Hierbas italianas (opcional)'
+          '1 cucharadita de polvo para hornear',
+          '1 cucharadita de aceite de oliva',
+          'Sal y especias a gusto'
         ],
         preparation: [
-          'Ralla la coliflor y cocínala en microondas 4 minutos.',
-          'Escurre muy bien el exceso de agua (importante).',
-          'Mezcla con el huevo, queso y condimentos.',
-          'Forma una masa y aplánala en bandeja con papel pergamino.',
-          'Hornea a 200°C durante 20 minutos hasta que esté dorada.'
+          'Procesa la coliflor hasta obtener una textura fina.',
+          'Mezcla con el huevo, polvo para hornear, aceite y condimentos.',
+          'Hornea a 180 °C durante 15–20 minutos.'
         ],
-        bodyFeel: 'Casi imperceptible. Como si no hubieras comido nada pesado.',
+        bodyFeel: 'Ligero. Estructura sin pesadez.',
         tips: [
           'Escurrir bien la coliflor es el secreto del éxito.',
           'Perfecta como base para pizza saludable.'
@@ -511,22 +488,20 @@ Rota entre ellas para:
       {
         id: 'pan-de-zucchini',
         title: 'Pan de Zucchini',
-        description: 'Fresco y digestivo',
-        idealFor: 'Almuerzo de verano',
+        description: 'Húmedo y fácil de digerir',
+        idealFor: 'Comida ligera o cena',
         ingredients: [
-          '1 zucchini mediano rallado',
+          '1 zucchini rallado y bien escurrido',
           '1 huevo',
           '3 cucharadas de harina de almendras',
-          '¼ taza de queso feta desmenuzado',
-          'Sal, pimienta y eneldo'
+          '1 cucharadita de polvo para hornear',
+          'Sal a gusto'
         ],
         preparation: [
-          'Ralla el zucchini y escurre el exceso de agua.',
-          'Mezcla con el huevo, harina y condimentos.',
-          'Añade el queso feta.',
-          'Cocina en sartén como tortitas, 3 minutos por lado.'
+          'Mezcla todos los ingredientes hasta integrar.',
+          'Hornea a 180 °C durante 15–18 minutos o cocina en microondas durante 5 minutos.'
         ],
-        bodyFeel: 'Refrescante. Ligero. Perfecto para días calurosos.',
+        bodyFeel: 'Alimentada. Sin pesadez. Sin inflamación abdominal.',
         tips: [
           'El zucchini suelta mucha agua, escurre bien.',
           'Puedes sustituir el feta por cualquier queso que te guste.'
@@ -537,23 +512,20 @@ Rota entre ellas para:
       {
         id: 'pan-de-zanahoria',
         title: 'Pan de Zanahoria',
-        description: 'Dulce natural sin azúcar',
-        idealFor: 'Desayuno o merienda',
+        description: 'Suave y reconfortante',
+        idealFor: 'Comida ligera',
         ingredients: [
-          '1 taza de zanahoria rallada',
+          '1 zanahoria rallada',
           '1 huevo',
-          '3 cucharadas de harina de almendras',
-          '½ cucharadita de canela',
-          '¼ cucharadita de jengibre molido',
-          '¼ cucharadita de polvo para hornear'
+          '2 cucharadas de harina de almendras',
+          '1 cucharadita de polvo para hornear',
+          'Sal a gusto'
         ],
         preparation: [
-          'Mezcla la zanahoria rallada con el huevo.',
-          'Añade los ingredientes secos.',
-          'Vierte en molde engrasado.',
-          'Hornea a 180°C durante 25 minutos.'
+          'Procesa todos los ingredientes hasta obtener una masa uniforme.',
+          'Hornea a 180 °C durante 15–18 minutos o cocina en microondas durante 5 minutos.'
         ],
-        bodyFeel: 'Dulce satisfacción sin picos de azúcar. Energía estable.',
+        bodyFeel: 'Confort digestivo. Nada de barriga dura.',
         tips: [
           'La zanahoria aporta dulzor natural.',
           'Añade nueces picadas para más textura.'
@@ -564,24 +536,24 @@ Rota entre ellas para:
       {
         id: 'pan-de-espinaca-sarten',
         title: 'Pan de Espinaca (versión sartén)',
-        description: 'Rápido y sin horno',
-        idealFor: 'Cuando tienes prisa',
+        description: 'Práctico para el día a día',
+        idealFor: 'Sándwich rápido',
         ingredients: [
-          '1 taza de espinacas picadas',
-          '2 huevos',
-          '2 cucharadas de queso parmesano',
-          'Sal, pimienta y nuez moscada'
+          '2½ tazas de espinaca fresca',
+          '1 huevo',
+          '1 cucharada de yogur griego',
+          '3 cucharadas de harina de almendras',
+          '1 cucharadita de polvo para hornear',
+          'Sal a gusto'
         ],
         preparation: [
-          'Bate los huevos con el queso y condimentos.',
-          'Añade las espinacas picadas.',
-          'Vierte en sartén antiadherente caliente.',
-          'Cocina a fuego bajo 3-4 minutos por lado.'
+          'Procesa todo hasta obtener una mezcla homogénea.',
+          'Cocina en sartén tapada a fuego bajo durante 10–12 minutos.'
         ],
-        bodyFeel: 'Rápido de hacer, rápido de digerir.',
+        bodyFeel: 'Alimentada. Ligera. Sin hinchazón.',
         tips: [
           'Más parecido a una tortilla, pero funciona como pan.',
-          'Lista en menos de 10 minutos.'
+          'Lista en menos de 15 minutos.'
         ],
         section: 'parte-2-rotacion',
         block: 'Rotación Sin Hinchazón'
@@ -589,23 +561,20 @@ Rota entre ellas para:
       {
         id: 'pan-de-garbanzos-horno',
         title: 'Pan de Garbanzos (versión horno)',
-        description: 'Más esponjoso y alto',
+        description: 'Firme sin pesadez',
         idealFor: 'Comida principal',
         ingredients: [
-          '1 taza de harina de garbanzos',
+          '1 taza de garbanzos cocidos',
           '2 huevos',
-          '¼ taza de aceite de oliva',
-          '½ taza de agua',
           '1 cucharadita de polvo para hornear',
-          'Sal y romero'
+          '1 cucharadita de aceite de oliva',
+          'Sal y especias a gusto'
         ],
         preparation: [
-          'Mezcla todos los ingredientes hasta obtener masa homogénea.',
-          'Vierte en molde engrasado.',
-          'Hornea a 180°C durante 25-30 minutos.',
-          'Deja enfriar antes de cortar.'
+          'Procesa todos los ingredientes hasta obtener una mezcla espesa.',
+          'Hornea a 180 °C durante 20–25 minutos.'
         ],
-        bodyFeel: 'Sustancioso y satisfactorio. Proteína vegetal que llena bien.',
+        bodyFeel: 'Energía estable. Nada de gases.',
         tips: [
           'Este pan sube más que la versión de sartén.',
           'Perfecto para cortar en rebanadas.'
@@ -616,22 +585,21 @@ Rota entre ellas para:
       {
         id: 'pan-de-platano-verde',
         title: 'Pan de Plátano Verde',
-        description: 'Almidón resistente amigo del intestino',
-        idealFor: 'Desayuno energético',
+        description: 'Confort firme, versión salada',
+        idealFor: 'Antojo salado o acompañamiento',
         ingredients: [
           '1 plátano verde',
           '1 huevo',
-          '1 cucharada de aceite de coco',
-          '¼ cucharadita de sal',
-          'Canela al gusto'
+          '1 cucharada de aceite de oliva',
+          'Un chorrito de vinagre de manzana',
+          '½ cucharadita de polvo para hornear',
+          'Sal a gusto'
         ],
         preparation: [
-          'Pela y corta el plátano verde en trozos.',
-          'Licúa con el huevo, aceite y condimentos.',
-          'Vierte en sartén antiadherente.',
-          'Cocina a fuego medio 4 minutos por lado.'
+          'Procesa todo hasta integrar.',
+          'Hornea a 180 °C durante 15–18 minutos o cocina en microondas durante 5 minutos.'
         ],
-        bodyFeel: 'Energía sostenida. El almidón resistente alimenta tu microbiota.',
+        bodyFeel: 'Satisfecha. Sin inflamación tardía.',
         tips: [
           'El plátano verde tiene almidón resistente, excelente para la flora intestinal.',
           'Sabe diferente al plátano maduro, más neutro.'
@@ -642,22 +610,20 @@ Rota entre ellas para:
       {
         id: 'pan-de-aguacate',
         title: 'Pan de Aguacate',
-        description: 'Cremoso y nutritivo',
-        idealFor: 'Desayuno completo',
+        description: 'Cremoso y estable',
+        idealFor: 'Antojo o cena ligera',
         ingredients: [
-          '½ aguacate maduro',
+          '1 aguacate maduro',
           '1 huevo',
-          '2 cucharadas de harina de almendras',
-          '¼ cucharadita de polvo para hornear',
-          'Sal y pimienta'
+          'Queso rallado a gusto',
+          'Sal y hierbas'
         ],
         preparation: [
-          'Machaca el aguacate hasta hacer puré.',
-          'Mezcla con el huevo.',
-          'Añade la harina, polvo para hornear y condimentos.',
-          'Cocina en microondas 90 segundos o en sartén 3 minutos por lado.'
+          'Mezcla todos los ingredientes.',
+          'Forma discos pequeños.',
+          'Hornea a 190 °C durante 20 minutos.'
         ],
-        bodyFeel: 'Cremoso y satisfactorio. Grasas buenas que sacian.',
+        bodyFeel: 'Placer sin culpa. Digestión tranquila.',
         tips: [
           'Usa aguacate bien maduro para mejor textura.',
           'Rico en grasas saludables y potasio.'
@@ -668,22 +634,18 @@ Rota entre ellas para:
       {
         id: 'pan-de-queso-cottage',
         title: 'Pan de Queso Cottage',
-        description: 'Alto en proteína',
-        idealFor: 'Post-ejercicio',
+        description: 'Proteína suave y reconfortante',
+        idealFor: 'Antojo o desayuno tardío',
         ingredients: [
           '½ taza de queso cottage',
-          '1 huevo',
-          '3 cucharadas de harina de almendras',
-          '¼ cucharadita de polvo para hornear',
-          'Sal al gusto'
+          '2 huevos',
+          'Sal a gusto'
         ],
         preparation: [
-          'Mezcla el queso cottage con el huevo.',
-          'Añade la harina, polvo para hornear y sal.',
-          'Vierte en molde apto para microondas.',
-          'Cocina 90 segundos en microondas.'
+          'Mezcla todos los ingredientes.',
+          'Cocina en waflera o sartén durante 3–5 minutos.'
         ],
-        bodyFeel: 'Proteína que construye, no que inflama.',
+        bodyFeel: 'Saciedad. Nada de hinchazón.',
         tips: [
           'Excelente fuente de proteína de alta calidad.',
           'Perfecto después de entrenar.'
@@ -694,22 +656,19 @@ Rota entre ellas para:
       {
         id: 'pan-de-linaza-taza',
         title: 'Pan de Linaza en Taza',
-        description: 'Individual y rápido',
-        idealFor: 'Porción individual',
+        description: 'Rápido y funcional',
+        idealFor: 'Emergencia o desayuno exprés',
         ingredients: [
-          '3 cucharadas de harina de linaza',
+          '2 cucharadas de linaza molida',
           '1 huevo',
-          '1 cucharada de mantequilla derretida',
-          '½ cucharadita de polvo para hornear',
-          'Sal al gusto'
+          '1 cucharada de yogur',
+          '½ cucharadita de polvo para hornear'
         ],
         preparation: [
-          'Mezcla todos los ingredientes en una taza grande.',
-          'Cocina en microondas 90 segundos.',
-          'Deja reposar 30 segundos.',
-          'Voltea la taza para desmoldar.'
+          'Mezcla todo en una taza.',
+          'Cocina en microondas durante 3 minutos.'
         ],
-        bodyFeel: 'Rápido, fácil, sin desastre. Digestión sin drama.',
+        bodyFeel: 'Intestino tranquilo. Barriga liviana.',
         tips: [
           'Perfecto cuando solo quieres una porción.',
           'La taza debe ser grande para que no se desborde.'
@@ -720,23 +679,21 @@ Rota entre ellas para:
       {
         id: 'pan-de-tahini',
         title: 'Pan de Tahini y Nuez',
-        description: 'Sabor intenso y nutritivo',
-        idealFor: 'Merienda sofisticada',
+        description: 'Grasa buena, digestión lenta',
+        idealFor: 'Antojo con café',
         ingredients: [
-          '2 cucharadas de tahini',
-          '1 huevo',
-          '1 cucharada de harina de almendras',
-          '¼ cucharadita de polvo para hornear',
-          '1 pizca de sal',
-          'Nueces picadas (opcional)'
+          '2 huevos',
+          '½ taza de tahini',
+          'Nueces picadas',
+          '½ cucharadita de bicarbonato',
+          'Un chorrito de jugo de limón',
+          'Sal a gusto'
         ],
         preparation: [
-          'Mezcla el tahini con el huevo hasta integrar.',
-          'Añade la harina, polvo para hornear y sal.',
-          'Incorpora las nueces si las usas.',
-          'Cocina en microondas 90 segundos.'
+          'Mezcla todos los ingredientes hasta integrar.',
+          'Hornea a 180 °C durante 20–25 minutos.'
         ],
-        bodyFeel: 'Rico en minerales. Satisface sin excesos.',
+        bodyFeel: 'Satisfecha por horas. Sin inflamación.',
         tips: [
           'El tahini es rico en calcio y hierro.',
           'Sabor a sésamo que combina con todo.'
@@ -772,23 +729,19 @@ Rota entre ellas para:
       {
         id: 'pan-nube-gourmet',
         title: 'Pan Nube Gourmet',
-        description: 'La versión elevada',
-        idealFor: 'Ocasiones especiales',
+        description: 'Ultra ligero',
+        idealFor: 'Desayuno fino o acompañamiento',
         ingredients: [
-          '2 huevos (separados)',
-          '2 cucharadas de queso crema',
-          '¼ cucharadita de cremor tártaro',
-          '1 pizca de sal'
+          'Claras de huevo en polvo',
+          'Agua',
+          'Sal',
+          'Especias a gusto'
         ],
         preparation: [
-          'Separa las claras de las yemas.',
-          'Bate las claras con el cremor tártaro hasta punto de nieve.',
-          'Mezcla las yemas con el queso crema.',
-          'Incorpora suavemente las claras a las yemas.',
-          'Forma montoncitos en bandeja con papel pergamino.',
-          'Hornea a 150°C durante 25-30 minutos.'
+          'Bate las claras con el agua hasta punto firme.',
+          'Hornea a 150 °C durante 25–30 minutos.'
         ],
-        bodyFeel: 'Aire puro. Como comer una nube de verdad.',
+        bodyFeel: 'Extremadamente liviano. Digestión invisible.',
         tips: [
           'La técnica de separar huevos hace toda la diferencia.',
           'Estos panes son tan ligeros que casi flotan.'
