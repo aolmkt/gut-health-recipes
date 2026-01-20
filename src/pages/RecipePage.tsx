@@ -28,28 +28,28 @@ const RecipePage = () => {
         transition={{ duration: 0.4 }}
         className="page-transition"
       >
-        {/* Header */}
-        <header className="bg-cream pt-20 pb-12 md:pt-24 md:pb-16 px-6">
+        {/* Header - Extra padding on mobile for menu button */}
+        <header className="bg-cream pt-24 pb-10 md:pt-24 md:pb-16 px-5 md:px-6">
           <div className="max-w-3xl mx-auto">
             {section && (
               <Link 
                 to={`/seccion/${section.id}`}
-                className="inline-flex items-center gap-2 text-sm text-accent hover:text-primary transition-colors mb-4"
+                className="inline-flex items-center gap-2 text-base text-accent hover:text-primary transition-colors mb-4 py-2 min-h-[44px]"
               >
-                <ArrowLeft className="w-4 h-4" />
+                <ArrowLeft className="w-5 h-5" />
                 {section.title}
               </Link>
             )}
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
-                <p className="text-sm text-muted-foreground uppercase tracking-wider mb-3">
+                <p className="text-sm md:text-sm text-muted-foreground uppercase tracking-wider mb-3">
                   {recipe.block}
                 </p>
-                <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
+                <h1 className="font-serif text-2xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
                   {recipe.title}
                 </h1>
                 {recipe.description && (
-                  <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
+                  <p className="text-lg md:text-lg text-muted-foreground mt-4 leading-relaxed">
                     {recipe.description}
                   </p>
                 )}
@@ -57,7 +57,7 @@ const RecipePage = () => {
               <FavoriteButton
                 isFavorite={isFavorite(recipe.id)}
                 onToggle={() => toggleFavorite(recipe.id)}
-                className="mt-2"
+                className="mt-2 min-w-[48px] min-h-[48px]"
               />
             </div>
           </div>

@@ -101,7 +101,7 @@ const Home = () => {
         </section>
 
         {/* Start Reading CTA */}
-        <section className="max-w-3xl mx-auto px-6 py-16 md:py-24 text-center">
+        <section className="max-w-3xl mx-auto px-5 md:px-6 py-16 md:py-24 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -111,15 +111,15 @@ const Home = () => {
             <h2 className="font-serif text-2xl md:text-3xl font-medium text-foreground mb-4">
               Comienza tu lectura
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
+            <p className="text-lg md:text-base text-muted-foreground mb-8 max-w-md mx-auto">
               Tu viaje hacia un pan que nutre sin inflamar comienza ahora.
             </p>
             <Link
               to="/seccion/introduccion"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors min-h-[52px] text-lg"
             >
               Comenzar a leer
-              <ArrowRight className="w-4 h-4" />
+              <ArrowRight className="w-5 h-5" />
             </Link>
           </motion.div>
         </section>
