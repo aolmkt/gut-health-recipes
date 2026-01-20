@@ -124,14 +124,14 @@
 }
 
 @layer components {
-  /* Reading mode typography */
+  /* Reading mode typography - Mobile First */
   .reading-content {
-    @apply text-lg leading-relaxed tracking-wide;
+    @apply text-xl md:text-lg leading-[1.8] md:leading-relaxed tracking-wide;
     font-family: var(--font-sans);
   }
 
   .reading-content h1 {
-    @apply text-4xl md:text-5xl font-medium mb-8 leading-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-medium mb-8 leading-tight;
     font-family: var(--font-serif);
   }
 
@@ -146,38 +146,38 @@
   }
 
   .reading-content p {
-    @apply mb-6 text-foreground/90;
+    @apply mb-6 text-foreground/90 text-xl md:text-lg;
   }
 
   .reading-content ul, .reading-content ol {
-    @apply mb-6 pl-6 space-y-2;
+    @apply mb-6 pl-6 space-y-3 md:space-y-2;
   }
 
   .reading-content li {
-    @apply text-foreground/85;
+    @apply text-foreground/85 text-xl md:text-lg;
   }
 
-  /* Recipe specific styles */
+  /* Recipe specific styles - Mobile optimized */
   .recipe-ingredients {
-    @apply bg-cream rounded-lg p-6 md:p-8 mb-8;
+    @apply bg-cream rounded-lg p-5 md:p-8 mb-8;
   }
 
   .recipe-ingredients h3 {
-    @apply text-lg font-semibold mb-4 text-primary uppercase tracking-wider;
+    @apply text-base md:text-lg font-semibold mb-4 text-primary uppercase tracking-wider;
     font-family: var(--font-sans);
   }
 
   .recipe-ingredients ul {
-    @apply space-y-3 list-none pl-0;
+    @apply space-y-4 md:space-y-3 list-none pl-0;
   }
 
   .recipe-ingredients li {
-    @apply flex items-start gap-3;
+    @apply flex items-start gap-3 text-lg md:text-base;
   }
 
   .recipe-ingredients li::before {
     content: '•';
-    @apply text-accent font-bold text-xl leading-none mt-0.5;
+    @apply text-accent font-bold text-2xl md:text-xl leading-none mt-0.5;
   }
 
   /* Smooth page transitions */
