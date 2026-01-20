@@ -24,236 +24,89 @@ export const ebookSections: Section[] = [
     title: 'Antes de Empezar',
     content: `# Esto no es tu culpa
 
-No tienes un estómago delicado.
-No exageras.
-No estás imaginando cosas.
+- No tienes un estómago "delicado".
+- No exageras.
+- No estás imaginando cosas.
 
 Tienes un cuerpo inteligente reaccionando a algo que no debería estar ahí.
 
-¿Y si te dijera que el problema no eres tú, sino lo que te han hecho creer que era pan?
+Durante años te hicieron creer que hincharte después de comer pan era normal. Que amar el pan tenía un precio. Que si querías sentirte bien, tenías que renunciar.
 
-Lo que encuentras en el supermercado hoy no es pan. Es un producto diseñado para durar, no para nutrirte. Lleno de conservantes, azúcares ocultos, harinas ultraprocesadas y aditivos que tu cuerpo no reconoce.
+Este manual existe para corregir esa mentira.
 
-Y cada vez que lo comes, tu cuerpo responde con hinchazón, gases, cansancio o pesadez. No porque seas débil. Sino porque está haciendo exactamente lo que debe hacer: protegerte.
+Aquí no vas a encontrar dietas, reglas estrictas ni promesas imposibles. Vas a encontrar algo mucho más simple: alivio.
 
-Este libro no te va a obligar a dejar el pan.
+Comer pan sin sentir que tu abdomen se infla. Sin pesadez. Sin culpa. Sin tener que desabrocharte el pantalón antes del mediodía.
 
-Te va a enseñar a elegirlo, prepararlo y comerlo de una forma que te haga sentir bien. Ligera. Libre. Satisfecha.
-
-Vas a entender qué está pasando en tu cuerpo, cómo identificar los panes que te inflaman, y cómo preparar alternativas reales, fáciles y deliciosas que puedes disfrutar sin culpa.
-
-Porque el pan no es el enemigo.
-El enemigo es el pan que te vendieron como real.
-
-Y a partir de hoy, eso cambia.`
+Si alguna vez pensaste: "¿por qué a mí me pasa esto?", este manual es para ti.`
   },
   {
     id: 'bloque-1',
     title: 'Bloque 1: La Corrección',
-    content: `# Por qué te hinchas (y no es lo que crees)
+    content: `# Por qué te hinchas
 
-El problema no eres tú.
-El problema no es el pan.
+El problema no eres tú. El problema no es el pan.
+
 El problema es cómo se hace el pan hoy.
 
-Durante miles de años, el pan se hizo de forma simple: harina, agua, sal y tiempo. Las culturas antiguas dejaban fermentar la masa durante horas, a veces días. Ese proceso no solo hacía que el pan supiera mejor, sino que también lo hacía digerible.
+El pan moderno fue diseñado para durar semanas en una bolsa. Para ser blando siempre. Para producir en masa.
 
-Hoy, la mayoría de los panes comerciales se hacen en menos de dos horas. Y para que eso funcione, se les agrega:
+No fue diseñado para ser digerido con facilidad.
 
-- Levaduras químicas de acción rápida
-- Gluten extra para dar estructura
-- Azúcares ocultos para acelerar el proceso
-- Conservantes para que dure más en el estante
+Por eso pasa esto: comes pan, al principio todo parece normal, y poco después tu vientre se endurece, se inflama y se llena de aire.
 
-Tu cuerpo no fue diseñado para procesar eso.
+Eso no es debilidad. Es tu cuerpo avisando.
 
-Y cuando lo intentas, responde con lo único que puede hacer:
-Inflamación. Gases. Hinchazón. Pesadez.
+Hincharse no es normal. Lo que pasa es que normalizamos lo incorrecto durante demasiado tiempo.
 
-No eres intolerante. No estás rota.
-Solo estás comiendo algo que no es realmente pan.
+Cuando el pan está hecho con ingredientes simples, reales y bien combinados, el cuerpo no lucha. Digiere. Acepta. Sigue.
 
-## La Regla Simple
-
-Si un pan puede durar semanas sin ponerse malo, tu cuerpo tampoco puede procesarlo. Lo que no se descompone afuera, se descompone adentro. Y eso genera fermentación donde no debería haberla.
-
-El pan real dura 2-3 días. No más.
-
-## El Gluten No Es El Único Problema
-
-Mucha gente cree que si evita el gluten, el problema desaparece. Pero incluso los panes "sin gluten" comerciales están llenos de almidones refinados, gomas y aditivos que pueden generar los mismos síntomas.
-
-El problema no es solo el gluten.
-Es todo lo que viene con él.
-
-## Lo Que Vas a Aprender
-
-En los siguientes bloques vas a descubrir:
-
-1. Cómo identificar qué panes te inflaman (y cuáles no)
-2. Cómo elegir el pan correcto según el momento del día
-3. Recetas simples que puedes hacer en minutos, sin complicaciones
-
-No necesitas ser chef. No necesitas ingredientes raros.
-Solo necesitas entender cómo funciona tu cuerpo.
-
-Y eso empieza ahora.`
+Eso es lo que vamos a recuperar aquí.`
   },
   {
     id: 'bloque-2',
     title: 'Bloque 2: El Criterio',
     content: `# El Semáforo del Pan
 
-No todos los panes son iguales. Y tu cuerpo lo sabe.
-
-Aquí tienes una guía simple para saber qué comer y qué evitar:
-
----
+No necesitas saber de nutrición. Solo necesitas saber qué pan te inflama y cuál no.
 
 ## 🔴 PAN ROJO — EVÍTALO
 
-Estos panes te inflaman casi siempre:
+Pan de paquete. Pan que dura meses. Pan muy blanco, muy blando, muy perfecto.
 
-- **Pan blanco comercial** — Hecho en menos de 2 horas, lleno de aditivos
-- **Pan de molde** — Diseñado para durar, no para nutrirte
-- **Pan "integral" de supermercado** — La mayoría solo tiene color marrón, no fibra real
-- **Bollería industrial** — Azúcar, grasas trans y harinas refinadas
-- **Pan congelado de hornear en casa** — Parece fresco, pero tiene los mismos problemas
-
-**Señales de alerta:**
-- Dura más de 5 días sin enmohecerse
-- Tiene más de 5 ingredientes
-- Contiene "jarabe de glucosa", "emulsificantes" o "mejorantes"
-
----
+**Cómo se siente tu cuerpo:** Barriga dura. Gases. Pesadez inmediata.
 
 ## 🟡 PAN AMARILLO — CUIDADO
 
-Estos panes pueden funcionar para algunas personas, pero no para todas:
+Pan integral industrial. Pan "fitness" lleno de ingredientes raros.
 
-- **Pan de panadería artesanal** — Mejor que el industrial, pero revisa los ingredientes
-- **Pan de centeno comercial** — A menudo mezclado con harina de trigo
-- **Pan sin gluten de supermercado** — Revisa que no tenga almidones refinados
-- **Tortillas de trigo** — Pueden contener grasas hidrogenadas
-
-**Cómo probarlos:**
-- Come una porción pequeña y observa tu cuerpo durante 2-3 horas
-- Si sientes hinchazón, pesadez o gases, ese pan no es para ti
-
----
+**Cómo se siente tu cuerpo:** No explota, pero molesta. Inflamación lenta y constante.
 
 ## 🟢 PAN VERDE — PAN REAL
 
-Estos panes raramente causan problemas:
+Pan hecho con huevos. Harinas simples y densas. Preparaciones caseras.
 
-- **Pan de masa madre real** — Fermentado mínimo 12 horas
-- **Pan casero con ingredientes simples** — Harina, agua, sal, tiempo
-- **Los panes de este libro** — Diseñados para no inflamarte
-
-**Características:**
-- Ingredientes que puedes pronunciar
-- Se pone duro en 2-3 días (señal de que es real)
-- Te deja satisfecha, no hinchada
-
----
-
-## La Regla de Oro
-
-> Si después de comer pan te sientes pesada, hinchada o con sueño, ese pan no es para ti.
-
-No importa lo que diga la etiqueta.
-No importa si es "orgánico" o "artesanal".
-Tu cuerpo es el único juez que importa.`
+**Cómo se siente tu cuerpo:** Comes. Te sientes satisfecha. Sigues tu día.`
   },
   {
     id: 'bloque-3',
     title: 'Bloque 3: El Uso Real',
     content: `# El pan correcto para cada momento
 
-Tu cuerpo cambia durante el día. Y el pan también debe adaptarse.
+El cuerpo cambia durante el día. Y el pan también debe adaptarse.
 
-No es lo mismo lo que necesitas al despertar que lo que te sienta bien antes de dormir. Aquí tienes una guía para elegir el pan correcto según el momento:
-
----
-
-## 🌅 MAÑANA — Ligero y Energético
-
-Por la mañana, tu sistema digestivo está despertando. Necesita algo suave que no lo sobrecargue.
-
-**Mejores opciones:**
-- Pan Nube — Ultra ligero, fácil de digerir
-- Pan de Linaza — Fibra suave que activa sin inflamar
-- Pan de Espinaca — Nutrición sin pesadez
-
-**Evita:** Panes densos o con muchas grasas. Tu cuerpo aún no está listo para procesarlos.
-
----
-
-## ☀️ MEDIODÍA — Estructura y Saciedad
-
-A mitad del día necesitas algo que te sostenga sin dejarte pesada para la tarde.
-
-**Mejores opciones:**
-- Pan de Almendras — Perfecto para sándwiches
-- Pan de Garbanzos — Saciante y nutritivo
-- Pan de Calabaza — Suave pero sustancioso
-
-**Consejo:** Este es el mejor momento para panes con más proteína o fibra.
-
----
-
-## 🌙 NOCHE — Suave y Reconfortante
-
-Por la noche, tu digestión se ralentiza. Necesitas algo que no interfiera con tu descanso.
-
-**Mejores opciones:**
-- Pan de Plátano — Confort sin inflamación
-- Pan de Queso — Satisface antojos sin consecuencias
-- Pan Nube — Siempre seguro
-
-**Evita:** Panes con mucha fibra o ingredientes difíciles de digerir. Pueden causar gases durante la noche.
-
----
-
-## 🏃‍♀️ ANTES DE EJERCICIO
-
-Si vas a moverte, necesitas energía rápida pero limpia.
-
-**Mejores opciones:**
-- Pan de Plátano — Energía natural
-- Pan Nube — Ligero, no te pesará
-
----
-
-## 📚 PARA LLEVAR AL TRABAJO
-
-Necesitas algo que aguante bien y sea fácil de transportar.
-
-**Mejores opciones:**
-- Pan de Almendras — Mantiene su estructura
-- Pan de Garbanzos — No se deshace fácilmente
-
----
-
-## La Regla del Momento
-
-> No hay un pan perfecto para todo el día. Hay un pan perfecto para cada momento.
-
-Escucha a tu cuerpo. Observa cómo te sientes después de cada comida. Y ajusta según lo que funcione para ti.`
+- 🟢 **DESAYUNO LIGERO:** Para empezar el día sin peso.
+- 🟡 **COMIDA / SÁNDWICH:** Para sostenerte sin inflamación.
+- 🟢 **ANTOJO Y CONFORT:** Para el placer sin castigo.`
   },
   {
     id: 'parte-1-recetas',
     title: 'Parte 1: Recetas Esenciales',
-    content: `# Las 8 Recetas Base
+    content: `# Empieza aquí
 
-Estas son las recetas fundamentales que necesitas dominar. Son simples, rápidas y funcionan para casi cualquier persona.
+Estas son las recetas base. No necesitas más para dejar de hincharte.
 
-Cada una está diseñada para:
-- Prepararse en menos de 15 minutos
-- Usar ingredientes fáciles de encontrar
-- No causar hinchazón ni malestar
-
-Empieza por la que más te llame la atención. No hay orden correcto.`,
+Úsalas primero. Domínalas. Confía en tu cuerpo.`,
     recipes: [
       {
         id: 'pan-nube',
@@ -485,16 +338,9 @@ Empieza por la que más te llame la atención. No hay orden correcto.`,
   {
     id: 'parte-2-rotacion',
     title: 'Parte 2: Rotación Sin Hinchazón',
-    content: `# Variedad para Cada Día
+    content: `# Más opciones cuando ya estás cómoda
 
-La clave para una digestión feliz es la rotación. No comer lo mismo todos los días.
-
-Estas 11 recetas adicionales te dan opciones para variar durante la semana. Algunas son versiones diferentes de las esenciales, otras son completamente nuevas.
-
-Rota entre ellas para:
-- Evitar sensibilidades por repetición
-- Mantener tu alimentación interesante
-- Descubrir qué funciona mejor para tu cuerpo`,
+No necesitas usar esta parte ahora. Úsala cuando quieras variar sin volver a inflamarte.`,
     recipes: [
       {
         id: 'pan-de-coliflor',
@@ -841,72 +687,15 @@ Rota entre ellas para:
   {
     id: 'cierre',
     title: 'Cierre',
-    content: `# El problema nunca fue tu cuerpo
+    content: `# CIERRE
 
-Llegaste hasta aquí.
+El problema nunca fue tu cuerpo.
 
-Y eso significa que ya no eres la misma persona que empezó a leer este libro.
+Fue aceptar como normal algo que no lo era.
 
-Ahora sabes que la hinchazón no es tu culpa. Que tu cuerpo no está roto. Que no eres "demasiado sensible" ni "exagerada".
+Ahora no tienes solo recetas. Tienes un sistema.
 
-Simplemente estabas comiendo algo que no era realmente pan.
-
----
-
-## Lo Que Has Aprendido
-
-✓ Por qué el pan comercial te inflama (y no es el gluten)
-
-✓ Cómo identificar los panes que te hacen daño
-
-✓ Qué pan elegir según el momento del día
-
-✓ 20 recetas que puedes hacer en minutos
-
-✓ Cómo escuchar a tu cuerpo y ajustar según lo que funcione
-
----
-
-## El Camino Adelante
-
-No tienes que ser perfecta.
-
-No tienes que hacer todas las recetas.
-
-No tienes que renunciar al pan para siempre.
-
-Solo tienes que elegir mejor. Y ahora sabes cómo.
-
----
-
-## Mi Invitación
-
-Empieza con una receta. La que más te llame la atención.
-
-Prepárala mañana.
-
-Y observa cómo te sientes.
-
-Ese es el único experimento que importa.
-
-Tu cuerpo te dirá la verdad. Solo tienes que escucharlo.
-
----
-
-## Gracias
-
-Por confiar en este proceso.
-Por darte la oportunidad de sentirte mejor.
-Por elegirte a ti misma.
-
-El pan real existe.
-Y ahora es tuyo.
-
----
-
-*Con cariño,*
-
-*Tu guía hacia el pan sin hinchazón*`
+Y ahora sabes cómo volver a comer pan sin inflamación.`
   }
 ];
 
