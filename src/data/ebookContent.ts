@@ -687,9 +687,7 @@ No necesitas usar esta parte ahora. Úsala cuando quieras variar sin volver a in
   {
     id: 'cierre',
     title: 'Cierre',
-    content: `# CIERRE
-
-El problema nunca fue tu cuerpo.
+    content: `El problema nunca fue tu cuerpo.
 
 Fue aceptar como normal algo que no lo era.
 
